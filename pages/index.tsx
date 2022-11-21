@@ -1,4 +1,5 @@
 import React from 'react'
+import Aboutme from '../components/Aboutme'
 import Achievement from '../components/Achievement'
 import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
@@ -9,6 +10,7 @@ function index() {
       <Navbar />
       <HeroSection />
       <Achievement />
+      <Aboutme />
     </div>
   )
 }
