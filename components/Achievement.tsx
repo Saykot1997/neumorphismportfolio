@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Achievement() {
     return (
-        <div className=' w-full px-5 py-20'>
+        <div className=' w-full px-5 py-10'>
             <div className=' grid grid-cols-1 lg:grid-cols-2 max-w-[900px] mx-auto items-center'>
                 <div>
                     <div>
@@ -49,17 +49,18 @@ export default function Achievement() {
                     </div>
                 </div>
                 <div className=' flex items-center justify-center h-full w-full'>
-                    <div className=' relative min-w-[470px] min-h-[470px] flex justify-center items-center'>
+                    <div className=' relative w-[300px] sm:min-w-[470px] h-[300px] sm:min-h-[470px] flex justify-center items-center'>
+
                         {/* next js */}
-                        <div className='customShadow cursor-pointer hover:scale-105 transition-all ease-linear duration-150 flex justify-center bg-gray-100 items-center h-40 w-40 p-2 rounded-full'>
+                        <div className='customShadow cursor-pointer hover:scale-105 transition-all ease-linear duration-150 flex justify-center bg-gray-100 items-center h-20 sm:h-40 w-20 sm:w-40 p-2 rounded-full'>
                             <Image src="/nextjs.png" alt="" title="" width={100} height={100} />
                         </div>
                         {/* node */}
-                        <div className=' absolute bottom-16 right-32 customShadow cursor-pointer hover:scale-105 transition-all ease-linear duration-150 bg-gray-100 flex justify-center items-center h-20 w-20 p-2 rounded-full'>
+                        <div className=' absolute bottom-16 right-32 customShadow cursor-pointer hover:scale-105 transition-all ease-linear duration-150 bg-gray-100 flex justify-center items-center h-10 sm:h-20 w-10 sm:w-20 p-2 rounded-full'>
                             <Image src="/node.png" alt="" title="" width={100} height={100} />
                         </div>
                         {/* react */}
-                        <div className=' absolute top-44 right-20 customShadow cursor-pointer hover:scale-105 transition-all ease-linear duration-150 bg-gray-100 flex justify-center items-center h-12 w-12 p-2 rounded-full'>
+                        <div className=' absolute top-44 right-20 customShadow cursor-pointer hover:scale-105 transition-all ease-linear duration-150 bg-gray-100 flex justify-center items-center h-8 sm:h-12 w-8 sm:w-12 p-2 rounded-full'>
                             <Image src="/react.png" alt="" title="" width={100} height={100} />
                         </div>
                         {/* jenkins */}
