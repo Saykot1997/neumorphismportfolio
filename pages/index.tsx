@@ -1,11 +1,15 @@
 import React from 'react'
 import Aboutme from '../components/Aboutme'
 import Achievement from '../components/Achievement'
+import ClientFeedBack from '../components/ClientFeedBack'
+import ContactMe from '../components/ContactMe'
 import Education from '../components/Education'
 import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
 import Portfolio from '../components/Portfolio'
 import Skills from '../components/Skills'
+import IdeaSolution from "../components/IdeaSolution"
+import Footer from '../components/Footer'
 
 function index() {
   return (
@@ -17,6 +21,10 @@ function index() {
       <Skills />
       <Portfolio />
       <Education />
+      <ClientFeedBack />
+      <ContactMe />
+      <IdeaSolution />
+      <Footer />
     </div>
   )
 }

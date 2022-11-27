@@ -4,9 +4,9 @@ import Image from 'next/image'
 export default function Aboutme() {
     return (
         <div className=' w-full px-5 py-5 sm:py-10'>
-            <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-[900px] mx-auto'>
+            <div className=' grid grid-cols-1 lg:grid-cols-2 gap-1 max-w-[1000px] mx-auto'>
                 <div className=' w-[420px] h-[400px]'>
-                    <div className='customShadow2 rounded-md p-2 bg-white border-white'>
+                    <div className='customShadow2 rounded-md p-2 bg-white border-white hover:scale-105 hover:rotate-2 transition-all ease-in duration-200'>
                         <Image src="/saykot1.jpg" className=' rounded-md h-full w-full' alt="" title="" width={700} height={1000} />
                     </div>
                 </div>

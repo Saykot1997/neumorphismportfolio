@@ -8,7 +8,7 @@ export default function Education() {
     }
     return (
         <div className=' w-full px-5 py-10'>
-            <div className=' grid grid-cols-1 lg:grid-cols-2 max-w-[900px] mx-auto'>
+            <div className=' grid grid-cols-1 lg:grid-cols-2 max-w-[1000px] mx-auto'>
                 <div>
                     <div className=' flex gap-5'>
                         <span onClick={() => toggleShowWork("education")} className={` uppercase font-bold transition-all ease-linear duration-200 cursor-pointer  p-[2px] ${showWork === "education" && "text-blue-500 border-b-2 border-blue-500"} `}>Educations</span>
@@ -111,7 +111,7 @@ export default function Education() {
                     </div>
                 </div>
                 <div>
-                    <div className='customShadow2 rounded-md p-2 bg-white border-white w-[500px] h-[400px]'>
+                    <div className='customShadow2 rounded-md p-2 bg-white border-white w-[500px] h-[400px]  hover:scale-105 hover:rotate-2 transition-all ease-in duration-200'>
                         {
                             showWork === "education" ?
                                 <Image src="/graduation.jpg" alt="" title="" width={600} height={400} className="w-full h-full" />
