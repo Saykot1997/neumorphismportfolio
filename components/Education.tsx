@@ -8,14 +8,14 @@ export default function Education() {
     }
     return (
         <div className=' w-full px-5 py-10'>
-            <div className=' grid grid-cols-1 lg:grid-cols-2 max-w-[1000px] mx-auto'>
+            <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-[1000px] mx-auto'>
                 <div>
                     <div className=' flex gap-5'>
                         <span onClick={() => toggleShowWork("education")} className={` uppercase font-bold transition-all ease-linear duration-200 cursor-pointer  p-[2px] ${showWork === "education" && "text-blue-500 border-b-2 border-blue-500"} `}>Educations</span>
                         <span onClick={() => toggleShowWork("experience")} className={` uppercase font-bold transition-all ease-linear duration-200 cursor-pointer  p-[2px] ${showWork === "experience" && "text-blue-500 border-b-2 border-blue-500"} `}>Experience</span>
                     </div>
 
-                    <div className=' pr-20'>
+                    <div className=' pr-0 sm:pr-10 md:pr-20'>
                         {
                             showWork === "education" ?
                                 <>
@@ -26,8 +26,8 @@ export default function Education() {
                                             </div>
                                         </div>
                                         <div className=' ml-5 mt-3'>
-                                            <p className=' text-primary text-xl font-bold'>Bachelor of Arts in English</p>
-                                            <p className=' text-sm text-primary font-semibold'>Victoria University of Bangladesh</p>
+                                            <p className=' text-primary sm:text-lg md:text-xl font-bold'>Bachelor of Arts in English</p>
+                                            <p className=' text-[12px] sm:text-sm text-primary font-semibold'>Victoria University of Bangladesh</p>
                                             <p className=' text-[12px] text-primary font-semibold'>Pranthopath, Dhaka</p>
                                         </div>
                                     </div>
@@ -38,8 +38,8 @@ export default function Education() {
                                             </div>
                                         </div>
                                         <div className=' ml-5 mt-3'>
-                                            <p className=' text-primary text-xl font-bold'>Higher Secondary Certificate</p>
-                                            <p className=' text-sm text-primary font-semibold'>Bhulta High School and Collage</p>
+                                            <p className=' text-primary sm:text-lg md:text-xl font-bold'>Higher Secondary Certificate</p>
+                                            <p className=' text-[12px] sm:text-sm text-primary font-semibold'>Bhulta High School and Collage</p>
                                             <p className=' text-[12px] text-primary font-semibold'>Bhulta, Rupgonj, Narayangonj</p>
                                         </div>
                                     </div>
@@ -50,8 +50,8 @@ export default function Education() {
                                             </div>
                                         </div>
                                         <div className=' ml-5 mt-3'>
-                                            <p className=' text-primary text-xl font-bold'>Secondary School Certificate</p>
-                                            <p className=' text-sm text-primary font-semibold'>Parabo Ideal High School</p>
+                                            <p className=' text-primary sm:text-lg md:text-xl font-bold'>Secondary School Certificate</p>
+                                            <p className=' text-[12px] sm:text-sm text-primary font-semibold'>Parabo Ideal High School</p>
                                             <p className=' text-[12px] text-primary font-semibold'>Parabo, Sonargaon, Narayangonj</p>
                                         </div>
                                     </div>
@@ -65,8 +65,8 @@ export default function Education() {
                                             </div>
                                         </div>
                                         <div className=' ml-5 mt-3'>
-                                            <p className=' text-primary text-xl font-bold'>Junior Web Developer</p>
-                                            <p className=' text-sm text-primary font-semibold'>Purple Algoritham</p>
+                                            <p className=' text-primary sm:text-lg md:text-xl font-bold'>Junior Web Developer</p>
+                                            <p className=' text-[12px] sm:text-sm text-primary font-semibold'>Purple Algoritham</p>
                                             <p className=' text-[12px] text-primary font-semibold'>Gulshan 1, Dhaka</p>
                                             <p className=' text-[12px] text-primary font-semibold'>From April 2023 - To Present</p>
                                         </div>
@@ -78,8 +78,8 @@ export default function Education() {
                                             </div>
                                         </div>
                                         <div className=' ml-5 mt-3'>
-                                            <p className=' text-primary text-xl font-bold'>Responsibility</p>
-                                            <p className=' text-[12px] text-primary font-semibold'>Create frontend app using Tailwind CSS, React js, Next js and Make responsive designe</p>
+                                            <p className=' text-primary sm:text-lg md:text-xl font-bold'>Responsibility</p>
+                                            <p className=' text-[12px] sm:text-[12px] text-primary font-semibold'>Create frontend app using Tailwind CSS, React js, Next js and Make responsive designe</p>
 
                                         </div>
                                     </div>
@@ -90,8 +90,8 @@ export default function Education() {
                                             </div>
                                         </div>
                                         <div className=' ml-5 mt-3'>
-                                            <p className=' text-primary text-xl font-bold'>Responsibility</p>
-                                            <p className=' text-[12px] text-primary font-semibold'>Create secure backend api using Node js, Express js, Mongodeb, Mongoose, Json Web Token etc.</p>
+                                            <p className=' text-primary sm:text-lg md:text-xl font-bold'>Responsibility</p>
+                                            <p className=' text-[12px] sm:text-[12px] text-primary font-semibold'>Create secure backend api using Node js, Express js, Mongodeb, Mongoose, Json Web Token etc.</p>
                                         </div>
                                     </div>
                                     <div className=' flex mt-5'>
@@ -101,8 +101,8 @@ export default function Education() {
                                             </div>
                                         </div>
                                         <div className=' ml-5 mt-3'>
-                                            <p className=' text-primary text-xl font-bold'>Responsibility</p>
-                                            <p className=' text-[12px] text-primary font-semibold'>Deploy app in server and maintain.</p>
+                                            <p className=' text-primary sm:text-lg md:text-xl font-bold'>Responsibility</p>
+                                            <p className=' text-[12px] sm:text-[12px] text-primary font-semibold'>Deploy app in server and maintain.</p>
                                         </div>
                                     </div>
 
@@ -111,7 +111,7 @@ export default function Education() {
                     </div>
                 </div>
                 <div>
-                    <div className='customShadow2 rounded-md p-2 bg-white border-white w-[500px] h-[400px]  hover:scale-105 hover:rotate-2 transition-all ease-in duration-200'>
+                    <div className='customShadow2 rounded-md p-2 bg-white border-white w-full sm:w-[500px] h-[280px] sm:h-[400px]  hover:scale-105 hover:rotate-2 transition-all ease-in duration-200'>
                         {
                             showWork === "education" ?
                                 <Image src="/graduation.jpg" alt="" title="" width={600} height={400} className="w-full h-full" />

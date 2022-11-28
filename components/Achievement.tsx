@@ -10,9 +10,9 @@ export default function Achievement() {
                         <span className=' uppercase text-blue-500 font-bold border-b-2 border-blue-500 p-[2px]'>Achievements</span>
                     </div>
                     <div className=' mt-5'>
-                        <p className=' font-bold text-primary text-3xl'>{"I've"} been fortunate to work with and for people from <br /> some <span className=' text-blue-600'>amazing organizations</span> </p>
+                        <p className=' font-bold text-primary text-lg sm:text-xl md:text-3xl'>{"I've"} been fortunate to work with and for people from <br /> some <span className=' text-blue-600'>amazing organizations</span> </p>
                     </div>
-                    <div className=' pr-20'>
+                    <div className=' pr-0 sm:pr-10 md:pr-20'>
                         <div className=' flex mt-8'>
                             <div>
                                 <div className='customShadow cursor-pointer hover:scale-105 transition-all ease-linear duration-150 flex justify-center items-center h-12 w-12 p-2 rounded'>
@@ -20,8 +20,8 @@ export default function Achievement() {
                                 </div>
                             </div>
                             <div className=' ml-5 mt-3'>
-                                <p className=' text-primary text-2xl font-bold'>10+</p>
-                                <p className=' text-sm text-primary font-semibold'>10+ experience as well as designer, developer, maintainer</p>
+                                <p className=' text-primary text-2xl font-bold'>1+</p>
+                                <p className=' text-[12px] sm:text-sm text-primary font-semibold'>1+ experience as well as designer, developer, maintainer</p>
                             </div>
                         </div>
                         <div className=' flex mt-5'>
@@ -32,7 +32,7 @@ export default function Achievement() {
                             </div>
                             <div className=' ml-5 mt-3'>
                                 <p className=' text-primary text-2xl font-bold'>6,142</p>
-                                <p className=' text-sm text-primary font-semibold'>Happy customers worldwide working with 100% client satisfaction and glorious </p>
+                                <p className=' text-[12px] sm:text-sm text-primary font-semibold'>Happy customers worldwide working with 100% client satisfaction and glorious </p>
                             </div>
                         </div>
                         <div className=' flex mt-5'>
@@ -43,12 +43,12 @@ export default function Achievement() {
                             </div>
                             <div className=' ml-5 mt-3'>
                                 <p className=' text-primary text-2xl font-bold'>20+</p>
-                                <p className=' text-sm text-primary font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ad suscipit </p>
+                                <p className=' text-[12px] sm:text-sm text-primary font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ad suscipit </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className=' flex items-center justify-center h-full w-full'>
+                <div className=' hidden sm:flex items-center justify-center h-full w-full'>
                     <div className=' relative w-[300px] sm:min-w-[470px] h-[300px] sm:min-h-[470px] flex justify-center items-center'>
 
                         {/* next js */}

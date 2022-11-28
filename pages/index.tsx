@@ -13,7 +13,7 @@ import Footer from '../components/Footer'
 
 function index() {
   return (
-    <div className=" min-h-screen w-full bg-[#e9f1fb] px-20">
+    <div className=" min-h-screen w-full bg-[#e9f1fb] px-5 pt-16 sm:pt-20 sm:px-10 md:px-20">
       <Navbar />
       <HeroSection />
       <Achievement />

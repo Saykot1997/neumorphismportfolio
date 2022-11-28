@@ -4,16 +4,16 @@ import Image from 'next/image'
 export default function Aboutme() {
     return (
         <div className=' w-full px-5 py-5 sm:py-10'>
-            <div className=' grid grid-cols-1 lg:grid-cols-2 gap-1 max-w-[1000px] mx-auto'>
-                <div className=' w-[420px] h-[400px]'>
-                    <div className='customShadow2 rounded-md p-2 bg-white border-white hover:scale-105 hover:rotate-2 transition-all ease-in duration-200'>
+            <div className=' grid grid-cols-1 lg:grid-cols-2 gap-3 max-w-[1000px] mx-auto'>
+                <div className=' w-full h-[300px] sm:w-[420px] sm:h-[400px]'>
+                    <div className=' w-full h-full customShadow2 rounded-md p-2 bg-white border-white hover:scale-105 hover:rotate-2 transition-all ease-in duration-200'>
                         <Image src="/saykot1.jpg" className=' rounded-md h-full w-full' alt="" title="" width={700} height={1000} />
                     </div>
                 </div>
                 <div>
-                    <p className=' text-primary text-2xl font-bold'>About Me</p>
-                    <p className=' text-primary text-lg mt-3 font-semibold'>Saykot Hossain</p>
-                    <p className=' text-primary text-lg font-semibold textGradient'>Full Stack Web Developer || Devops Engineer</p>
+                    <p className=' text-primary text-xl sm:text-2xl font-bold'>About Me</p>
+                    <p className=' text-primary sm:text-lg mt-2 sm:mt-3 font-semibold'>Saykot Hossain</p>
+                    <p className=' text-primary sm:text-lg font-semibold textGradient'>Full Stack Web Developer || Devops Engineer</p>
                     <span className=' my-2 inline-block w-80 h-[2px] bg-gray-300'></span>
                     <p><span className=' text-primary font-bold'>Residence:</span> Borpa, Bhulta, Rupgonj, Narayangonj</p>
                     {/* <p><span className=' text-primary font-bold'>City:</span> Narayangonj</p> */}
