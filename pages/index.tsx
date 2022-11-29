@@ -25,7 +25,6 @@ function index() {
       <ContactMe />
       <IdeaSolution />
       <Footer />
-      {/*  */}
     </div>
   )
 }
