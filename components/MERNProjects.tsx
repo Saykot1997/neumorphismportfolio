@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function MERNProjects({ showShort }) {
+interface PropsType {
+    showShort: boolean;
+}
+
+
+export default function MERNProjects({ showShort }: PropsType) {
     return (
         <div className=' mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 '>
             <div className='customShadow hover:scale-105 transition-all duration-200 ease-linear cursor-pointer w-full px-2 pb-5 pt-2  rounded-md bg-gray-100'>

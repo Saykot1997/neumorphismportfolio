@@ -12,7 +12,7 @@ export default function Portfolio() {
     const toggleShowShort = () => {
         setShowShort(!showShort)
     }
-    const toggleWorkCat = (value) => {
+    const toggleWorkCat = (value: string) => {
         setWorkCat(value)
     }
 
