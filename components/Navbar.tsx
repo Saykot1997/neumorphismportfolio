@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 export default function Navbar() {
 
@@ -19,13 +21,30 @@ export default function Navbar() {
     return (
         <div className=' w-full fixed top-0 left-0 bg flex justify-center py-5 bg-[#e9f1fb] z-[1000]'>
             <ul className=' hidden sm:flex items-center'>
-                <li className=' text-primary font-medium mr-5 cursor-pointer'>Home</li>
-                <li className=' text-primary font-medium mr-5 cursor-pointer'>Achievements</li>
-                <li className=' text-primary font-medium mr-5 cursor-pointer'>About me</li>
-                <li className=' text-primary font-medium mr-5 cursor-pointer'>Skills</li>
-                <li className=' text-primary font-medium mr-5 cursor-pointer'>Portfolio</li>
-                <li className=' text-primary font-medium mr-5 cursor-pointer'>Feedback</li>
-                <button className=' text-primary font-medium customShadow px-2 sm:px-4 py-1 sm:py-[6px] rounded bg-[#edeef3] hover:scale-105 transition-all duration-200 ease-linear'>Contract</button>
+                <Link activeClass="active" to="hero-section" spy={true} smooth={true} offset={-100} duration={500} onClick={toggleIsOpen}>
+                    <li className=' text-primary font-medium mr-5 cursor-pointer'>Home</li>
+                </Link>
+                <Link activeClass="active" to="achievement" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                    <li className=' text-primary font-medium mr-5 cursor-pointer'>Achievements</li>
+                </Link>
+                <Link activeClass="active" to="about-me" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                    <li className=' text-primary font-medium mr-5 cursor-pointer'>About me</li>
+                </Link>
+                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                    <li className=' text-primary font-medium mr-5 cursor-pointer'>Skills</li>
+                </Link>
+                <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                    <li className=' text-primary font-medium mr-5 cursor-pointer'>Portfolio</li>
+                </Link>
+                <Link activeClass="active" to="education" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                    <li className=' text-primary font-medium mr-5 cursor-pointer'>Education</li>
+                </Link>
+                <Link activeClass="active" to="feedback" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                    <li className=' text-primary font-medium mr-5 cursor-pointer'>Feedback</li>
+                </Link>
+                <Link activeClass="active" to="contact-me" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                    <button className=' text-primary font-medium customShadow px-2 sm:px-4 py-1 sm:py-[6px] rounded bg-[#edeef3] hover:scale-105 transition-all duration-200 ease-linear'>Contract</button>
+                </Link>
             </ul>
             <div onClick={toggleIsOpen} className=' w-full flex justify-end items-center sm:hidden px-5'>
                 <button className=' text-primary font-medium customShadow px-2 sm:px-4 py-1 sm:py-[6px] rounded bg-[#edeef3] hover:scale-105 transition-all duration-200 ease-linear'>Menu</button>
@@ -35,15 +54,32 @@ export default function Navbar() {
                     <div className=' flex justify-center items-center absolute top-3 right-8'>
                         <button onClick={toggleIsOpen} className=' text-primary font-medium customShadow px-2 sm:px-4 py-1 sm:py-[6px] rounded bg-[#edeef3] hover:scale-105 transition-all duration-200 ease-linear'>Close</button>
                     </div>
-                    <li className=' text-primary hover:text-gray-400 font-medium mr-5 cursor-pointer'>Home</li>
-                    <li className=' text-primary hover:text-gray-400 font-medium mr-5 cursor-pointer'>Achievements</li>
-                    <li className=' text-primary hover:text-gray-400 font-medium mr-5 cursor-pointer'>About me</li>
-                    <li className=' text-primary hover:text-gray-400 font-medium mr-5 cursor-pointer'>Skills</li>
-                    <li className=' text-primary hover:text-gray-400 font-medium mr-5 cursor-pointer'>Portfolio</li>
-                    <li className=' text-primary hover:text-gray-400 font-medium mr-5 cursor-pointer'>Feedback</li>
-                    <div className=' flex justify-center items-center'>
-                        <button className=' text-primary -translate-x-2 font-medium customShadow px-2 sm:px-4 py-1 sm:py-[6px] rounded bg-[#edeef3] hover:scale-105 transition-all duration-200 ease-linear'>Contract</button>
-                    </div>
+                    <Link activeClass="active" to="hero-section" spy={true} smooth={true} offset={-100} duration={500} onClick={toggleIsOpen}>
+                        <li className=' text-primary font-medium mr-5 cursor-pointer'>Home</li>
+                    </Link>
+                    <Link activeClass="active" to="achievement" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                        <li className=' text-primary font-medium mr-5 cursor-pointer'>Achievements</li>
+                    </Link>
+                    <Link activeClass="active" to="about-me" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                        <li className=' text-primary font-medium mr-5 cursor-pointer'>About me</li>
+                    </Link>
+                    <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                        <li className=' text-primary font-medium mr-5 cursor-pointer'>Skills</li>
+                    </Link>
+                    <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                        <li className=' text-primary font-medium mr-5 cursor-pointer'>Portfolio</li>
+                    </Link>
+                    <Link activeClass="active" to="education" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                        <li className=' text-primary font-medium mr-5 cursor-pointer'>Education</li>
+                    </Link>
+                    {/* <Link activeClass="active" to="feedback" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                        <li className=' text-primary font-medium mr-5 cursor-pointer'>Feedback</li>
+                    </Link> */}
+                    <Link activeClass="active" to="contact-me" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleIsOpen}>
+                        <div className=' flex justify-center items-center'>
+                            <button className=' text-primary -translate-x-2 font-medium customShadow px-2 sm:px-4 py-1 sm:py-[6px] rounded bg-[#edeef3] hover:scale-105 transition-all duration-200 ease-linear'>Contract</button>
+                        </div>
+                    </Link>
                 </ul>
             }
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Achievement() {
     return (
-        <div className=' w-full px-5 py-10'>
+        <div id='achievement' className=' w-full px-5 py-10'>
             <div className=' grid grid-cols-1 lg:grid-cols-2 max-w-[1000px] mx-auto items-center'>
                 <div>
                     <div>

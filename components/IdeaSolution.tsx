@@ -12,7 +12,7 @@ export default function ContactMe() {
                     <div className=' grid grid-cols-10 gap-3'>
                         <div className=' col-span-10 sm:col-span-4'>
                             <p className=' text-primary font-semibold'>About me</p>
-                            <p className=' mt-2 text-sm text-primary'>I am Saykot Hossain Shohel a selftaught full stack web developer. I love new technology to learn and implement in projects. I have clear knowledge of software developement life cycle and have working experience on both frontend and backend also some devops tools like Docker, Kubernetes, Jenkins, Ansible, AWS EC2 and Linux. Primarily, I work on Javasctipt but have basic knowledge on several programing languages like python and php.</p>
+                            <p className=' mt-2 text-sm text-primary'>As a Full Stack Web Developer I have clear knowledge of software development life cycle.The frontend technologies to build appearing user interface. The backend technologies to build secure API or backend system. The oparation technologies to deploy or host the application to use or access the end user. The skill to implement CI/CD pipeline to boost the software development life cycle.</p>
                         </div>
                         <div className=' col-span-5 sm:col-span-2'>
                             <p className=' text-primary font-semibold'>Frontend</p>

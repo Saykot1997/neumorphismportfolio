@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ClientFeedBack() {
     return (
-        <div className=' hidden sm:block w-full px-5 py-10'>
+        <div id='feedback' className=' hidden sm:block w-full px-5 py-10'>
             <div className='  max-w-[1000px] mx-auto'>
                 <div className=' flex justify-center items-center'>
                     <span className=' text-xl text-primary font-bold border-b-2 border-gray-300 py-1'>Clients Feedback</span>

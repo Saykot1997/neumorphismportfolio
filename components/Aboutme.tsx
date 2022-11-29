@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Aboutme() {
     return (
-        <div className=' w-full px-5 py-5 sm:py-10'>
+        <div id='about-me' className=' w-full px-5 py-5 sm:py-10'>
             <div className=' grid grid-cols-1 lg:grid-cols-2 gap-3 max-w-[1000px] mx-auto'>
                 <div className=' w-full h-[300px] sm:w-[420px] sm:h-[400px]'>
                     <div className=' w-full h-full customShadow2 rounded-md p-2 bg-white border-white hover:scale-105 hover:rotate-2 transition-all ease-in duration-200'>

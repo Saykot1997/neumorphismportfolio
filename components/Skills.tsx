@@ -25,7 +25,7 @@ export default function Skills() {
 
 
     return (
-        <div id='Skills' className=' w-full px-5 py-10'>
+        <div id='skills' className=' w-full px-5 py-10'>
             <div className=' max-w-[1000px] mx-auto'>
                 <p className=' text-primary font-bold text-lg sm:text-xl  md:text-3xl text-center '>Skills:</p>
                 <div className=' w-full grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5 sm:mt-10'>

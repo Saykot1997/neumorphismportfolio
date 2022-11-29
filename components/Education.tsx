@@ -7,7 +7,7 @@ export default function Education() {
         setShowWork(option)
     }
     return (
-        <div className=' w-full px-5 py-10'>
+        <div id='education' className=' w-full px-5 py-10'>
             <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-[1000px] mx-auto'>
                 <div>
                     <div className=' flex gap-5'>

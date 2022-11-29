@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function HeroSection() {
 
     return (
-        <div className=' w-full'>
+        <div id='hero-section' className=' w-full'>
             <div className=' w-full min-h-[400px] mt-5'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 items-center customInsetShadow py-5 sm:py-10 px-5 sm:px-10 md:px-20 rounded-md max-w-[1200px] h-full mx-auto'>
                     <div>
@@ -15,7 +16,7 @@ export default function HeroSection() {
                                     "H", 500, "Hi", 500, "Hi, I", 500, "Hi, I a", 500, "Hi, I am", 500, "Hi, I am S", 500, "Hi, I am Sa", 500, "Hi, I am Say", 500, "Hi, I am Sayk", 500, "Hi, I am Sayko", 500, "Hi, I am Saykot", 500, "Hi, I am Saykot H", 500, "Hi, I am Saykot Ho", 500, "Hi, I am Saykot Hos", 500, "Hi, I am Saykot Hoss", 500, "Hi, I am Saykot Hossa", 500, "Hi, I am Saykot Hossai", 500, "Hi, I am Saykot Hossain", 500,
 
                                     () => {
-                                        console.log('Done typing!');
+                                        // console.log('Done typing!');
                                     }
                                 ]}
                                 wrapper="div"
@@ -30,7 +31,9 @@ export default function HeroSection() {
                             <p className='textGradient font-semibold'>{"<code>"}</p>
                         </div>
                         <div className=' mt-5 sm:mt-8'>
-                            <button className=' text-primary font-semibold bg-[#edeef3] px-2 sm:px-4 py-1 sm:py-2 rounded customShadow hover:scale-105 transition-all duration-200 ease-linear'>Explore Now</button>
+                            <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-70} duration={500}>
+                                <button className=' text-primary font-semibold bg-[#edeef3] px-2 sm:px-4 py-1 sm:py-2 rounded customShadow hover:scale-105 transition-all duration-200 ease-linear'>Explore Now</button>
+                            </Link>
                         </div>
                     </div>
                     <div className=''>

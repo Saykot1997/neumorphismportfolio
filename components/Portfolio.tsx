@@ -3,11 +3,13 @@ import React, { useState } from 'react'
 import APIProjects from './APIProjects';
 import HTMLProjects from './HTMLProjects';
 import MERNProjects from './MERNProjects';
+import NextProjects from './NextProjects';
 import ReactProjects from './ReactProjects';
+
 
 export default function Portfolio() {
 
-    const [workCat, setWorkCat] = useState("html");
+    const [workCat, setWorkCat] = useState("react");
     const [showShort, setShowShort] = useState(true)
     const toggleShowShort = () => {
         setShowShort(!showShort)
@@ -17,7 +19,7 @@ export default function Portfolio() {
     }
 
     return (
-        <div className=' w-full px-5 py-5 sm:py-10'>
+        <div id='portfolio' className=' w-full px-5 py-5 sm:py-10'>
             <div className=' max-w-[1000px] mx-auto'>
                 <div className=' w-full flex flex-col justify-center items-center'>
                     <span className=' text-blue-500 font-bold sm:text-lg md:text-2xl'>PORTFOLIOS</span>
@@ -43,6 +45,10 @@ export default function Portfolio() {
                 {
                     workCat === "api" &&
                     <APIProjects showShort={showShort} />
+                }
+                {
+                    workCat === "next" &&
+                    <NextProjects showShort={showShort} />
                 }
                 {
                     workCat === "mern" &&

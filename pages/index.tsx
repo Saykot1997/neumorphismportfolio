@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Aboutme from '../components/Aboutme'
 import Achievement from '../components/Achievement'
 import ClientFeedBack from '../components/ClientFeedBack'
@@ -11,7 +11,9 @@ import Skills from '../components/Skills'
 import IdeaSolution from "../components/IdeaSolution"
 import Footer from '../components/Footer'
 
-function index() {
+function Index() {
+
+
   return (
     <div className=" min-h-screen w-full bg-[#e9f1fb] px-5 pt-16 sm:pt-20 sm:px-10 md:px-20">
       <Navbar />
@@ -29,4 +31,4 @@ function index() {
   )
 }
 
-export default index
+export default Index
