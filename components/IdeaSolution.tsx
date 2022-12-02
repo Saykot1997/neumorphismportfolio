@@ -21,7 +21,7 @@ export default function ContactMe() {
                             <p className=' my-1 sm:my-2 text-sm text-primary'>Tailwind CSS</p>
                             <p className=' my-1 sm:my-2 text-sm text-primary'>Javascript</p>
                             <p className=' my-1 sm:my-2 text-sm text-primary'>React js</p>
-                            <p className=' my-1 sm:my-2 text-sm text-primary'>Next js</p>
+                            <p className=' my-1 sm:my-2 text-sm text-primary'>Typescript</p>
 
                         </div>
                         <div className=' col-span-5 sm:col-span-2'>

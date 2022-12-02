@@ -39,7 +39,9 @@ export default function Aboutme() {
                         <button className=' customShadow2 py-1 px-3 rounded bg-gray-100 font-semibold text-blue-500 hover:scale-105 transition-all duration-200 ease-linear'>AWS</button>
                     </div>
                     <div className=' mt-5'>
-                        <button className='customShadow py-1 px-3 rounded bg-gray-100 font-semibold text-gray-700 hover:scale-105 transition-all duration-200 ease-linear'>Download CV</button>
+                        <a href="Personal CV.pdf" download>
+                            <button className='customShadow py-1 px-3 rounded bg-gray-100 font-semibold text-gray-700 hover:scale-105 transition-all duration-200 ease-linear'>Download CV</button>
+                        </a>
                     </div>
                 </div>
             </div>
