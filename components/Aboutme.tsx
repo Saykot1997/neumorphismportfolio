@@ -16,7 +16,7 @@ export default function Aboutme() {
                     <p className=' text-primary sm:text-lg font-semibold textGradient'>Full Stack Web Developer || Devops Engineer</p>
                     <span className=' my-2 inline-block w-80 h-[2px] bg-gray-300'></span>
                     <p><span className=' text-primary font-bold mb-1'>Residence:</span> Borpa, Bhulta, Rupgonj, Narayangonj</p>
-                    <p><span className=' text-primary font-bold'>Work at :</span> Purple Algoritham Ltd. - <span className=' text-sm font-medium'>Junior Web Developer</span></p>
+                    <p><span className=' text-primary font-bold'>Work at :</span> Purple Algoritham Ltd. - <span className=' text-sm font-medium'>Web Developer</span></p>
                     {/* <p><span className=' text-primary font-bold'>City:</span> Narayangonj</p> */}
                     {/* <p><span className=' text-primary font-bold'>Age:</span> 25</p> */}
                     <p className=' mt-2 text-sm text-primary'>I am Saykot Hossain Shohel MERN stack web developer. I love new technology to learn and implement in projects. I have clear knowledge of software developement life cycle and have working experience on both frontend and backend also some devops tools. Primarily, I work on Javasctipt but have basic knowledge on several programing languages like python and php.</p>
